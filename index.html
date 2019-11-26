@@ -14,8 +14,14 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
- 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -23,6 +29,13 @@
     <title>Tim Sharkey</title>
   </head>
   <body>
+
+<!-- loader -->
+    <div class="loader">
+      <div class="inner"></div>
+      
+<!-- hero section -->
+    </div>
     <div id="slides">
       <div class="overlay"></div>
 
@@ -43,7 +56,31 @@
         <p class="sub typed"></p>
       </div>
     </div>
-    <!-- About me seciton -->
+
+<!-- Navbar -->
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Timothy Sharkey</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#skills">Skills <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stats">Stats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+<!-- About me seciton -->
     <section id="about" class="section">
       <div class="container">
         <div class="row">
@@ -123,8 +160,7 @@
         </div>
       </div>
     </section>
-
-    <!-- Stats section -->
+ <!-- Stats section -->
     <section id="stats" class="statsSection section">
       <div class="container">
         <div class="row">
@@ -132,13 +168,13 @@
             <div class="squareItem">
               <div class="squareInnerContainer">
                 <div class="squareIcon">
-                   <i class="far fa-clock"></i>
-                  </div>
+                  <i class="far fa-clock"></i>
+                </div>
 
-                  <div class="squareContent">
-                    <h2>4</h2>
-                    <h3>Projects</h3>
-                  </div>
+                <div class="squareContent">
+                  <h2>4</h2>
+                  <h3>Projects</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -146,13 +182,13 @@
             <div class="squareItem">
               <div class="squareInnerContainer">
                 <div class="squareIcon">
-                   <i class="far fa-clock"></i>
-                  </div>
+                  <i class="far fa-lightbulb"></i>
+                </div>
 
-                  <div class="squareContent">
-                    <h2>4</h2>
-                    <h3>Projects</h3>
-                  </div>
+                <div class="squareContent">
+                  <h2 class="counter">4</h2>
+                  <h3>Projects</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -160,13 +196,13 @@
             <div class="squareItem">
               <div class="squareInnerContainer">
                 <div class="squareIcon">
-                   <i class="far fa-clock"></i>
-                  </div>
+                  <i class="fas fa-code"></i>
+                </div>
 
-                  <div class="squareContent">
-                    <h2>4</h2>
-                    <h3>Projects</h3>
-                  </div>
+                <div class="squareContent">
+                  <h2>4</h2>
+                  <h3>Projects</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -174,21 +210,253 @@
             <div class="squareItem">
               <div class="squareInnerContainer">
                 <div class="squareIcon">
-                   <i class="far fa-clock"></i>
-                  </div>
+                  <i class="far fa-clock"></i>
+                </div>
 
-                  <div class="squareContent">
-                    <h2>4</h2>
-                    <h3>Projects</h3>
-                  </div>
+                <div class="squareContent">
+                  <h2>4</h2>
+                  <h3>Projects</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+<!-- contact me  -->
+    <section>
+      <div id="contact" class="contactSection section">
+        <div class="col-md-12 text-center">
+          <p class="subHeading">Like what you see?</p>
+          <h2>I'd love to hear from you!</h2>
+          <a href="mailTo:techne3@gmail.com" class="contactButton"
+            >GET IN TOUCH!</a
+          >
+        </div>
+      </div>
+    </section>
+
+<!-- Portfolio  -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="heading">
+            <h2>Portfolio</h2>
+          </div>
+          <div class="filter">
+            <ul id="filters">
+              <li><a href="#" data-filter="*" class="current"> ALL </a></li>
+              <li><a href="#" data-filter=".apps"> Apps </a></li>
+              <li><a href="#" data-filter=".website"> Websites </a></li>
+            </ul>
+          </div>
+          <div class="itemsContainer">
+            <ul class="items">
+              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img
+                    src="images/portfolio/thumbnails/port1.jpg"
+                    alt="project"
+                  />
+                  <div class="icons">
+                    <a
+                      href="images/port1.2.jpg"
+                      title="View Image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="this is an app"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img
+                    src="images/portfolio/thumbnails/port1.jpg"
+                    alt="project"
+                  />
+                  <div class="icons">
+                    <a
+                      href="images/port1.2.jpg"
+                      title="View Image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="this is an website"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img
+                    src="images/portfolio/thumbnails/port1.jpg"
+                    alt="project"
+                  />
+                  <div class="icons">
+                    <a
+                      href="images/port1.2.jpg"
+                      title="View Image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="this is an website"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img
+                    src="images/portfolio/thumbnails/port1.jpg"
+                    alt="project"
+                  />
+                  <div class="icons">
+                    <a
+                      href="images/port1.2.jpg"
+                      title="View Image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="this is an app"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img
+                    src="images/portfolio/thumbnails/port1.jpg"
+                    alt="project"
+                  />
+                  <div class="icons">
+                    <a
+                      href="images/port1.2.jpg"
+                      title="View Image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="this is an app"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img
+                    src="images/portfolio/thumbnails/port1.jpg"
+                    alt="project"
+                  />
+                  <div class="icons">
+                    <a
+                      href="images/port1.2.jpg"
+                      title="View Image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="this is an website"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img
+                    src="images/portfolio/thumbnails/port1.jpg"
+                    alt="project"
+                  />
+                  <div class="icons">
+                    <a
+                      href="images/port1.2.jpg"
+                      title="View Image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="this is an app"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img
+                    src="images/portfolio/thumbnails/port1.jpg"
+                    alt="project"
+                  />
+                  <div class="icons">
+                    <a
+                      href="images/port1.2.jpg"
+                      title="View Image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="this is an app"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <a href="" target="blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- copyright -->
+    <div id="copyright" class="copyrightSection section">
+      <div class="col-md-12 text-center">
+        <p>&copy; Copyright Timothy Sharkey 2019</p>
+      </div>
+    </div>
 
     <script src="javascript/jquery.easypiechart.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <script src="javascript/owl.carousel.min.js"></script>
     <script src="javascript/jquery.superslides.min.js"></script>
     <script src="javascript/typed.min.js"></script>
